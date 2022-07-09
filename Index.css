@@ -1,0 +1,311 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.sub_header {
+  margin-top: 50px;
+  min-height: 300px;
+  height: calc(100vh / 2.5);
+  max-height: 360px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: rgb(228, 225, 225);
+  background-image: linear-gradient(#0000009b, #0000009b),
+    url(img/background.jpg);
+}
+.title h2 {
+  font-size: 35px;
+  font-weight: bold;
+  font-family: monospace;
+}
+.title p {
+  font-size: 20px;
+}
+.popular {
+  animation: fadeInAnimation ease 8s;
+  animation-iteration-count: 1;
+  animation-fill-mode:forwards;
+}
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.ttl{
+  height: 35px;
+  border: 1px solid black;
+  width: 200px;
+  display: flex;
+  border-radius: 25px;
+}
+.ttl button{
+  width: 100px ;
+  outline: none;
+  border: none;
+  border-radius: 25px;
+  background-color: transparent;
+}
+.ttl button:focus{
+  background-color: rgb(5, 5, 68);
+  color: white;
+}
+.popular{
+  height: 48vh;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  display: flex;
+  background-color: none;
+}
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgb(5, 5, 68);
+  height: 10vh;
+  width: 100%;
+  z-index: 10;
+  transition: top 2s linear;
+}
+header div.content {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+header div.sub_media {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  top: 0;
+  left: 0;
+  max-width: var(--maxPrimaryPageWidth);
+  width: 100%;
+  padding: 0 40px;
+}
+header .logo {
+  margin-right: 16px;
+  color: aliceblue;
+  font-weight: bolder;
+  font-size: x-large;
+  margin-bottom: 0.5rem;
+  margin-left: 0.5rem;
+}
+header a {
+  color: #fff;
+  font-weight: 600;
+}
+header div.nav_wrapper {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  align-items: center;
+  margin-top: 10px;
+  overflow: visible;
+}
+header .nav_wrapper ul {
+  list-style-type: none;
+  display: flex;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+}
+header .nav_wrapper li:first-child {
+  margin-left: 0;
+}
+header .nav_wrapper li {
+  margin-left: 30px;
+}
+header div.flex {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+}
+header div.flex ul {
+  justify-content: flex-end;
+}
+header div.flex li {
+  margin-left: 30px;
+}
+
+header div.flex ul {
+  display: flex;
+  list-style: none;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+header ul.primary li.translate,
+header ul.primary li.user a {
+  display: block;
+  padding: 4px 0;
+}
+header ul li.translate div {
+  width: 28px;
+  height: 26px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  border: 1px solid #fff;
+  border-radius: 3px;
+  padding: 3px 5px;
+  transition: linear 0.1s;
+  color: #fff;
+  font-weight: 600;
+  font-size: 0.9em;
+  text-transform: uppercase;
+}
+header ul li.translate div:hover {
+  border: 1px solid rgb(5, 5, 68);
+  background-color: white;
+  color: rgb(5, 5, 68);
+}
+body{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  font-family: "Lucida Sans Unicode";
+  background-image: url("https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvcm0zMS1qai0wMi1nLWNvbmNyZXRlXzIuanBn.jpg?s=aVkGIk-g6ZEw9skw8Jg2DC1ofA8cVb-CfTfb1tXeinM");
+}
+header{
+  width: 100%;
+ 
+  height: 50px;
+  background: rgb(38, 39, 38);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #ccc;
+}
+header h1{
+  margin: 0 20px;
+  color: #fff;
+  font-family: arial;
+}
+header a {
+  text-decoration: none;
+}
+header form{
+  display: flex;
+  align-items: center;
+}
+#search{
+  width: 200px;
+  height: 55px;
+  outline: none;
+  padding-left: 15px;
+  margin-top: 10px;
+  background-color: transparent;
+  color: aliceblue;
+  border-left: 1px solid aliceblue;
+}
+#poster{
+  height: 60vh;
+  width: 90%;
+  padding-bottom: 120px;
+}
+#vid{
+  min-height: 100%;
+  min-width: 100%;
+}
+#demo{
+  color: rgb(169, 209, 245);
+  font-weight: 600;
+  font-family: monospace;
+  font: 16px;
+}
+main{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+main div{
+  width: 150px;
+  height: 280px;
+  margin: 19px 15px;
+  background: rgb(29, 29, 29);
+  border-radius: 5px;
+  border: 3px solid #0000009b;
+}
+img{
+  width: 100%;
+  height: 89%;
+  object-fit: cover;
+}
+h2{
+  font-size: 14px;
+  font-family: sans-serif;
+  font-weight: bold;
+  text-align: center;
+  color: #fff;
+}
+.sub_header {
+  min-height: 300px;
+  height: calc(100vh / 2.5);
+  max-height: 360px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  background-image: linear-gradient(#0000009b, #0000009b),
+    url("https://www.denofgeek.com/wp-content/uploads/2017/10/fast_furious_8_121.jpg?fit=620%2C349");
+}
+.title h2 {
+  font-size: 35px;
+  font-weight: bold;
+}
+.title p {
+  font-size: 20px;
+}
+
+
+
+span:hover {
+  background-color: rgb(228, 228, 228);
+}
+footer p{
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+}
+.title h2{
+    text-align: left;
+}
+@media (max-width: 500px) {
+  .f :not(#form){
+    display: none;
+  }
+  .flex{
+      display: none;
+  }
+  .title h2 {
+    font-size: 25px;
+    text-align: left;
+    font-weight: bold;
+  }
+  .title p {
+    font-size: 15px;
+  }
+  .sub_header {
+    margin-top: 50px;
+    min-height: 250px;
+    height: calc(100vh / 2.5);
+    max-height: 300px;
+  }
+  .popular{
+    height: 43vh;
+  }
+  header div.sub_media{
+    padding:0;
+  }
+  
+}
+
